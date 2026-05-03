@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Select Role</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            font-family: Arial;
+        }
+        .box {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .btn {
+            display: block;
+            margin: 15px;
+            padding: 10px 20px;
+            background: #3f6ad8;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <h2>Select Your Role</h2>
+
+    <a th:href="@{/adminIndex}" class="btn">Admin</a>
+    <a th:href="@{/index}" class="btn">User</a>
+
+</div>
+</body>
+</html>
